@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Proyecto3ERParcial
 {
     /// <summary>
-    /// Lógica de interacción para Peliculas.xaml
+    /// Lógica de interacción para DatosSerie.xaml
     /// </summary>
-    public partial class Peliculas : UserControl
+    public partial class DatosSerie : UserControl
     {
-        public Peliculas()
+        public DatosSerie()
         {
             InitializeComponent();
         }

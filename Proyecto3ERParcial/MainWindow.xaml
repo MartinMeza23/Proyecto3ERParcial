@@ -7,21 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="cbPeliseries" HorizontalAlignment="Left" Margin="278,53,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbPeliseries_SelectionChanged">
-            <ComboBoxItem>Serie</ComboBoxItem>
-            <ComboBoxItem>Pelicula</ComboBoxItem>
-        </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="278,32,0,0" TextWrapping="Wrap" Text="Agregar" VerticalAlignment="Top"/>
-        <Button x:Name="Btnaceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="418,53,0,0" VerticalAlignment="Top" Width="75" Click="Btnaceptar_Click"/>
-        <Grid x:Name="grdagregar" HorizontalAlignment="Left" Height="305" Margin="278,105,0,0" VerticalAlignment="Top" Width="506"/>
-        <ListView x:Name="ListTitAño" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="242" SelectionChanged="ListTitAño_SelectionChanged">
+        <ListView x:Name="ListaTyA" HorizontalAlignment="Left" Height="289" Margin="10,41,0,0" VerticalAlignment="Top" Width="218" SelectionChanged="ListaTyA_SelectionChanged">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Titulo" Width="170"></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Titulo" Width="140"></GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Año}" Header="Año" Width="70"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
-
+        <Button x:Name="OrdA" Content="Ordenar A-Z" HorizontalAlignment="Left" Margin="10,349,0,0" VerticalAlignment="Top" Width="102"/>
+        <Button x:Name="BtnAñoMayor" Content="Año ¨+¨" HorizontalAlignment="Left" Margin="130,349,0,0" VerticalAlignment="Top" Width="99"/>
+        <Button x:Name="OrdZ" Content="Ordenar Z-A" HorizontalAlignment="Left" Margin="10,374,0,0" VerticalAlignment="Top" Width="102"/>
+        <Button x:Name="BtnAñoMenor" Content="Año ¨-¨" HorizontalAlignment="Left" Margin="130,374,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Peliculas y Series" HorizontalAlignment="Left" Margin="11,10,680,0" VerticalAlignment="Top" Width="101"/>
+        <Grid x:Name="GrdPincipal" HorizontalAlignment="Left" Height="384" Margin="234,35,0,0" VerticalAlignment="Top" Width="558" Grid.ColumnSpan="2" />
+        <Button x:Name="BtnNuevoElemento" Content="Nuevo" HorizontalAlignment="Left" Margin="446,10,0,0" VerticalAlignment="Top" Width="76" Click="BtnNuevoElemento_Click"/>
+        <Button Name="BtnGuardar" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="526,384,0,0" VerticalAlignment="Top" Width="144"/>
+        <Button Name="BtnCancelar" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="704,384,0,0" VerticalAlignment="Top" Width="66" Click="btnCancelar_Click"/>
     </Grid>
 </Window>

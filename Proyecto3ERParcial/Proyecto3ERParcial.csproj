@@ -55,9 +55,40 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Series.xaml.cs">
-      <DependentUpon>Series.xaml</DependentUpon>
+    <Compile Include="EdicionPelicula.xaml.cs">
+      <DependentUpon>EdicionPelicula.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EdicionSerie.xaml.cs">
+      <DependentUpon>EdicionSerie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pelicula.cs" />
+    <Compile Include="Programa.cs" />
+    <Compile Include="Seleccion.xaml.cs">
+      <DependentUpon>Seleccion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Serie.cs" />
+    <Compile Include="visualPelicula.xaml.cs">
+      <DependentUpon>visualPelicula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisualSerie.xaml.cs">
+      <DependentUpon>VisualSerie.xaml</DependentUpon>
+    </Compile>
+    <Page Include="DatosPelicula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DatosSerie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EdicionPelicula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EdicionSerie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -66,23 +97,30 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DatosPelicula.xaml.cs">
+      <DependentUpon>DatosPelicula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DatosSerie.xaml.cs">
+      <DependentUpon>DatosSerie.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Peliculas.xaml">
+    <Page Include="Seleccion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Series.xaml">
+    <Page Include="visualPelicula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualSerie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Peliculas.xaml.cs">
-      <DependentUpon>Peliculas.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
