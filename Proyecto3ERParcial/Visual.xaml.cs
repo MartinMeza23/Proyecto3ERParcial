@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace Proyecto3ERParcial
 {
     /// <summary>
-    /// Lógica de interacción para Seleccion.xaml
+    /// Lógica de interacción para Visual.xaml
     /// </summary>
-    public partial class Seleccion : UserControl
+    public partial class Visual : UserControl
     {
-        public Seleccion()
+        public Visual()
         {
             InitializeComponent();
-        }
-
-        private void rdbtnPelicula_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void rdbtnSerie_Checked(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

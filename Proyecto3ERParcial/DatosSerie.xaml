@@ -4,30 +4,46 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Proyecto3ERParcial"
-             mc:Ignorable="d" Height="575.258" Width="811.598">
-    <Grid >
-        <Label Content="Título:" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top"/>
-        <Label Content="Año:" HorizontalAlignment="Left" Margin="35,151,0,0" VerticalAlignment="Top"/>
-        <Label Content="Productor:" HorizontalAlignment="Left" Margin="309,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
-        <Label Content="Descripción:" HorizontalAlignment="Left" Margin="30,225,0,0" VerticalAlignment="Top"/>
-        <Label Content="Género:" HorizontalAlignment="Left" Margin="323,151,0,0" VerticalAlignment="Top"/>
-        <Label Content="Rating:" HorizontalAlignment="Left" Margin="35,357,0,0" VerticalAlignment="Top"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,113,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="104,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="189"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="379,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="326"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="118" Margin="104,225,0,0" Stroke="Black" VerticalAlignment="Top" Width="601"/>
-
-        <ComboBox HorizontalAlignment="Left" Margin="379,151,0,0" VerticalAlignment="Top" Width="251" Height="26">
-            <ComboBoxItem>Accion</ComboBoxItem>
+             mc:Ignorable="d" 
+             d:DesignHeight="237.563" d:DesignWidth="491.624">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="399" Margin="61,7,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" Margin="10,43,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="117" Margin="61,43,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Género:" VerticalAlignment="Top" Margin="206,43,0,0"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="252,43,0,0">
+            <ComboBoxItem>Acción</ComboBoxItem>
+            <ComboBoxItem>Aventura</ComboBoxItem>
+            <ComboBoxItem>Comedia</ComboBoxItem>
+            <ComboBoxItem>Drama</ComboBoxItem>
             <ComboBoxItem>Terror</ComboBoxItem>
             <ComboBoxItem>Romance</ComboBoxItem>
-            <ComboBoxItem>Comedia</ComboBoxItem>
         </ComboBox>
-        <Label Content="Temporadas:" HorizontalAlignment="Left" Margin="30,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.626,0.436"/>
-        <Button x:Name="BtnGuardarSerie" Content="Guardar Nuevo Elemento" HorizontalAlignment="Left" Margin="104,479,0,0" VerticalAlignment="Top" Width="155"/>
-        <Button x:Name="BtnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="323,479,0,0" VerticalAlignment="Top" Width="75"/>
-        <GridSplitter HorizontalAlignment="Left" Height="32" Margin="530,396,0,-24" VerticalAlignment="Top" Width="4"/>
-
-
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="10,76,0,0"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="82,76,0,0">
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+            <ComboBoxItem>6</ComboBoxItem>
+            <ComboBoxItem>7</ComboBoxItem>
+            <ComboBoxItem>8</ComboBoxItem>
+            <ComboBoxItem>9</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" Margin="206,75,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="117" Margin="266,75,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Descripción:" VerticalAlignment="Top" Margin="10,109,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381" Margin="79,109,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Margin="10,183,0,0"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="52,183,0,0">
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+        </ComboBox>
     </Grid>
 </UserControl>
